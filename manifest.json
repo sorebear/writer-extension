@@ -1,0 +1,34 @@
+{
+  "name": "Zoho Writer and LivingWriter Styles",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "Apply Color to Zoho Writer and Formatting to LivingWriter",
+  "icons" : {
+    "16": "icons/writer.png",
+    "38": "icons/writer.png",
+    "48": "icons/writer.png",
+    "128": "icons/writer.png"
+  },
+  
+  "content_scripts": [
+    {
+      "matches": ["https://writer.zoho.com/writer/open/*"],
+      "css": [
+        "src/zoho_common_min_all.css",
+        "src/zoho_custom.css",
+        "src/zoho_darkmode.css",
+        "src/zoho_min_all.css"
+      ],
+      "js": ["src/zoho.js"]
+    },
+    {
+      "matches": ["https://livingwriter.com/chapters/*"],
+      "css": [
+        "src/livingwriter.css"
+      ],
+      "js": [
+        "src/livingwriter.js"
+      ]
+    }
+  ]
+}
