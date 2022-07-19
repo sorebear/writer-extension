@@ -1,3 +1,14 @@
+:root {
+  --blue: #0989b1;
+  --purple: #886bdb;
+  --dark-purple: #6a4dbd;
+  --themeColor: var(--purple);
+  --primrClr: var(--purple);
+  --activeBorderClr: var(--purple);
+  --buttonHoverBrClr: purple;
+  --blue2: purple
+}
+
 .objects-highlight {
   color: deepskyblue !important;
 }
@@ -8,4 +19,34 @@
 
 .characters-highlight {
   color: greenyellow !important;
+}
+
+.ui-doc-heading-navigation .ui-doc-nav-h1 .doc-nav-map-txt {
+  color: var(--purple);
+  font-family: 'Lato-Bold';
+}
+
+.ui-doc-heading-navigation .ui-doc-nav-h1 .doc-nav-map-txt:hover {
+  color: var(--dark-purple);
+}
+
+.ui-doc-heading-navigation .ui-doc-nav-h2 .doc-nav-map-txt {
+  color: #ccc;
+  font-family: 'Lato-Semibold';
+}
+
+.ui-doc-heading-navigation .ui-doc-nav-item:hover .doc-nav-map-txt {
+  color: var(--dark-purple);
+}
+
+.ui-doc-heading-navigation .ui-doc-nav-item.ui-doc-nav-h3 .ui-doc-nav-item-innercont {
+  padding-left: 20px !important;
+}
+
+.zw-page.zw-fixedview {
+  border-color: #444;
+}
+
+.zselectbox.has-focus .zselectbox__icon .zselectbox__arrow {
+  fill: var(--purple);
 }
